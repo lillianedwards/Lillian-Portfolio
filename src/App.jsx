@@ -6,7 +6,7 @@ import Contact from "./views/Contact";
 import Error from "./views/Error";
 import Resume from "./views/Resume";
 import Work from "./views/Work";
-import Navbar from './components/Navbar';
+import Header from './components/Navbar';
 import Footer from './components/Footer';
 
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
   <Router>
-    <Navbar/>
+    <Header/>
     <Routes>
     <Route path = '/' element = {<About/>}/>
     <Route path = '/about' element = {<About/>}/>
