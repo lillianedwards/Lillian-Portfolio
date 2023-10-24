@@ -13,6 +13,15 @@
   /* padding: 2rem; */
   /* text-align: center; */
   background: var(--background);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  flex:1;
+}
+
+body {
+  
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -20,7 +29,8 @@
 
 
 
-/* NAV BAR CSS */
+
+/* NAV BAR */
 
 .navbar {
   padding: 0;
@@ -37,7 +47,64 @@
   margin: 3rem;
 
 }
-
+/* ASK ABOUT HOW TO DO THIS LINE */
 .line {
-  color: var(--khaki)
+  color: var(--khaki);
+  
+  
 }
+
+@media (min-width: 0px) and (max-width: 1250px) {
+  .nav-link {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  nav li {
+    padding-top:10px;
+  }
+}
+
+/* END NAV BAR  */
+
+/* FOOTER  */
+
+.icon {
+margin-right: 5rem;
+}
+
+footer {
+  bottom: 0;
+  background: transparent;
+ 
+
+
+}
+
+/* END FOOTER */
+
+/* ABOUT */
+.headshot {
+  height: 22rem;
+  margin: 0;
+
+
+  
+}
+
+.heading {
+  color: var(--blue);
+  font-family: 'Julius Sans One';
+  text-align: center;
+  
+}
+
+.aboutMe {
+  color: var(--text);
+  font-family: "Crimson Text";
+  margin: 1rem;
+  line-height: 120%;
+  
+}
+/* END ABOUT */
