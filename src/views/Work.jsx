@@ -23,7 +23,7 @@ function ControlledCarousel() {
   };
   return ( 
    <Container className='d-flex justify-content-center'>
-    <Carousel className='carouselSize' activeIndex={index} onSelect={handleSelect}>
+    <Carousel className='carouselSize' activeIndex={index} onSelect={handleSelect} touch={true}>
     <Carousel.Item>
       <img src={menuMatch} alt="Menu Match Desktop" className='img-fluid' />
       <Carousel.Caption>

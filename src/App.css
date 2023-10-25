@@ -120,11 +120,53 @@ height: 30rem;
 background: var(--blue);
 color: var(--text);
 border-radius: 10px;
+font-family: "Crimson Text"
 
 }
 .workP {
   background: var(--khaki);
   color: var(--white);
   border-radius: 10px;
+  font-family: "Crimson Text"
 }
 /* END WORK */
+
+
+/* CONTACT */
+
+.contactCard {
+  background-color: var(--khaki);
+  width: 40rem;
+  height: 32rem;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.contactBtn {
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  width: 14rem;
+  height: 4.5rem;
+  margin-top: 2rem;
+  font-family: "Julius Sans One";
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contactBtn:hover {
+  background-color: var(--text);
+}
+
+.contactLabel {
+  font-family: 'Julius Sans One';
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.contactInput {
+  font-family: "Crimson Text";
+  color: var(--text);
+  font-size: 1rem;
+}
+/* END CONTACT  */
