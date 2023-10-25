@@ -2,17 +2,18 @@ import React from 'react';
 import headshot from '../assets/headshotNoBg.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 function About() {
   return (
      <div>
-      <h1 className='heading'>About</h1>
-      <hr className='line' />
+      <h2 className='heading'>Lillian Edwards</h2>
+      <h2 className='heading'>Front-End Developer</h2>
       <Container>
         <Row className='align-items-center'>
-          <Col xs={12} s={1} md={1} className='d-flex justify-content-center'>
+          <Col xs={12} md={3} className='d-flex justify-content-center'>
           <img src={headshot} alt="LillianEdwardsHeadShot" className='headshot' />
           </Col>
-          <Col xs={12}  s={11} md={11} >
+          <Col xs={12}  md={9} >
           <h4 className='aboutMe'>
           Greetings! I'm Lillian, a new Duluth-based front-end developer. I love the UI/UX side of things, but I have a knack for making things work. I can't give up JavaScript, there's still so much to learn!
           </h4>

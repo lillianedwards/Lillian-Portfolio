@@ -13,13 +13,14 @@
   /* padding: 2rem; */
   /* text-align: center; */
   background: var(--background);
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  /* background-repeat: no-repeat; */
   flex:1;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -71,12 +72,18 @@ body {
 /* FOOTER  */
 
 .icon {
-margin-right: 5rem;
+/* margin-right: 5rem; */
 }
 
 footer {
-  bottom: 0;
+  /* bottom: 0; */
   background: transparent;
+  /* position: fixed; */
+  /* left: 0; */
+  /* width: 100%; */
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
  
 
 
@@ -86,7 +93,7 @@ footer {
 
 /* ABOUT */
 .headshot {
-  height: 22rem;
+  height: 23rem;
   margin: 0;
 
 
@@ -105,6 +112,7 @@ footer {
   font-family: "Crimson Text";
   margin: 1rem;
   line-height: 120%;
+  margin-bottom: 2rem;
   
 }
 /* END ABOUT */
