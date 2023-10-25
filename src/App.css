@@ -108,3 +108,23 @@ footer {
   
 }
 /* END ABOUT */
+
+/* WORK */
+.carouselSize {
+width: 50rem;
+height: 30rem;
+
+}
+
+.workH3{
+background: var(--blue);
+color: var(--text);
+border-radius: 10px;
+
+}
+.workP {
+  background: var(--khaki);
+  color: var(--white);
+  border-radius: 10px;
+}
+/* END WORK */

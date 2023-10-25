@@ -10,7 +10,7 @@ function Header() {
     
     <Navbar expand="lg" className="bg-body-transparent">
     <Container className='d-flex justify-content-between'>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand>
       <img
           alt="Portfolio Signature Logo"
           src={brand}
