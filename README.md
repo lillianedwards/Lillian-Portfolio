@@ -23,7 +23,7 @@ A crucial piece of a web developer's career materials is the portfolio. It not o
 
 ## Access 🔗
 
-To access my portoflio, click on the  Link in the repository description, or follow the link directly! [alt text](nelify link GOESNHERE)
+To access my portoflio, click on the  Link in the repository description, or follow the link directly! [Lillian Edwards Portfolio](https://magnificent-churros-a12606.netlify.app)
 
 ## Installation 🖥️
 
