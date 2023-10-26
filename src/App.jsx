@@ -8,6 +8,7 @@ import Resume from "./views/Resume";
 import ControlledCarousel from "./views/Work";
 import Header from './components/Navbar';
 import Footer from './components/Footer';
+import Underline from './components/Underline';
 
 
 
@@ -15,16 +16,22 @@ function App() {
 
   return (
   <Router>
+
     <Header/>
+  
     <Routes>
+
     <Route path = '/' element = {<About/>}/>
     <Route path = '/about' element = {<About/>}/>
     <Route path = '/contact' element = {<Contact/>}/>
     <Route path = '/resume' element = {<Resume/>}/>
     <Route path = '/work' element = {<ControlledCarousel/>}/>
     <Route path = '*' element = {<Error/>}/>
+
     </Routes>
+
     <Footer/>
+
   </Router>
   )
 }

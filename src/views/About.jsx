@@ -1,12 +1,12 @@
 import React from 'react';
-import headshot from '../assets/headshotNoBg.png';
+import headshot from '../assets/LillianPhoto.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
 function About() {
   return (
      <div>
-      <h2 className='heading'>Lillian Edwards</h2>
+      <h1 className='heading'>Lillian Edwards</h1>
       <h2 className='heading'>Front-End Developer</h2>
       <Container>
         <Row className='align-items-center'>

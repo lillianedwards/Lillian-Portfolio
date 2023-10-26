@@ -1,72 +1,111 @@
 import React from 'react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import {Form, Button} from 'react-bootstrap';
+import {Form, Button, Alert, Toast} from 'react-bootstrap';
 
 function Contact() {
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [message, setMessage] = useState('');
+const [notValid, setValid] = useState(false)
+
+const resetTextInput = () => {
+setName('');
+setEmail('');
+setMessage('')
+setValid(false);
+}
+const form = useRef();
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm(
-    'service_c11h62j',
-    'template_ip3tmcj',
-    e.target,
-    'PLACEHOLDER'
-  )
+  emailjs.sendForm('service_c11h62j', 'template_ip3tmcj', form.current, 'TKcD44TlqgbHvRHtz')
   .then((result) => {
-    console.log('email sent successfully');
+    console.log(result.text);
+    resetTextInput();
   }, (error) => {
-    console.log('Failed to send email:', error);
+    console.log(error.text);
   });
+
+
 };
 
+const nameSubmit = (e) => {
+  setName(e.target.value)
+  if (name) {
+    setValid(false)
+  }
+}
+
+const emailSubmit = (e) => {
+  setEmail(e.target.value)
+  if (email) {
+    setValid(false)
+  }
+}
+
+const messageSubmit = (e) => {
+  setMessage(e.target.value)
+  if (message) {
+    setValid(false)
+  }
+}
+
+const validateEntry = (e) => {
+  if (!e.target.value) {
+    setValid(true)
+  }
+}
 
   return (
     
     
-    <div className=' container contactCard'>
+    <div className='container contactCard'>
       <div className='row'>
       <div className='col-12 d-flex justify-content-center'>
-      <Form onSubmit={sendEmail}>
+      <Form ref={form} onSubmit={sendEmail}>
         <Form.Group>
           <Form.Label className='contactLabel'>Name</Form.Label>
           <Form.Control
             type="text"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
+            name="user_name"
             className='contactInput'
+            value={name}
+            onChange={nameSubmit}
+            onMouseOut={validateEntry}
           />
         </Form.Group>
         <Form.Group>
           <Form.Label className='contactLabel'>Email</Form.Label>
           <Form.Control
             type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
+            name="user_email"
             className='contactInput'
+            value={email}
+            onChange={emailSubmit}
+            onMouseOut={validateEntry}
           />
         </Form.Group>
         <Form.Group>
-          <Form.Label className='contactLabel'>Message</Form.Label>
+          <Form.Label className='contactLabel '>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={4}
             name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
+            type="submit"
             className='contactInput '
+            value={message}
+            onChange={messageSubmit}
+            onMouseOut={validateEntry}
           />
         </Form.Group>
-        <Button className='contactBtn' type="submit">
+        {notValid && (
+            <Toast className='contactInput container' variant="info">
+            Please fill out all my corn fields. 🌽
+          </Toast>
+        )}
+        <Button className='contactBtn' type="submit" >
           Send
         </Button>
       </Form>

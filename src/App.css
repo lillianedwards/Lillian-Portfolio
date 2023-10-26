@@ -46,15 +46,32 @@ body {
   font-family: "Julius Sans One";
   color: var(--text);
   margin: 3rem;
-
-}
-/* ASK ABOUT HOW TO DO THIS LINE */
-.line {
-  color: var(--khaki);
-  
-  
+  text-decoration: none;
 }
 
+.nav-link:hover {
+  color: var(--blue);
+
+}
+
+/* .underline {
+  position: absolute;
+   bottom: 0;
+  left: 0; 
+  height: 2px;
+  width: 0;
+  /* background-color: var(--khaki); */
+  /* transition: width 0.3s ease-in-out; */
+
+
+.active {
+  width: 100%;
+  background: rgba(102, 153, 204, 0.75);
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 @media (min-width: 0px) and (max-width: 1250px) {
   .nav-link {
     font-size: 1.5rem;
@@ -125,17 +142,18 @@ height: 30rem;
 }
 
 .workH3{
-background: var(--blue);
+background: rgba(102, 153, 204, 0.75);
 color: var(--text);
 border-radius: 10px;
-font-family: "Crimson Text"
+font-family: "Crimson Text";
 
 }
 .workP {
-  background: var(--khaki);
+  background: rgba(179, 163, 148, 0.75);
   color: var(--white);
   border-radius: 10px;
-  font-family: "Crimson Text"
+  font-family: "Crimson Text";
+
 }
 /* END WORK */
 
@@ -144,10 +162,12 @@ font-family: "Crimson Text"
 
 .contactCard {
   background-color: var(--khaki);
-  width: 40rem;
-  height: 32rem;
+  max-width: 38rem;
+  height: 35rem;
   padding: 3rem;
+  
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contactBtn {
@@ -157,9 +177,11 @@ font-family: "Crimson Text"
   width: 14rem;
   height: 4.5rem;
   margin-top: 2rem;
+
   font-family: "Julius Sans One";
   font-size: 3rem;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contactBtn:hover {
@@ -178,3 +200,10 @@ font-family: "Crimson Text"
   font-size: 1rem;
 }
 /* END CONTACT  */
+
+/* RESUME */
+
+.resume {
+
+  margin-bottom: 5rem;
+}
