@@ -1,8 +1,8 @@
-# Refactored Portfolio
+# Refactored Portfolio  🪐 👡
 
 ## Description
 
-A crucial piece of a web developer's career materials is their portfolio. It not only exhibits their work and projects they've completed but also serves as a representation of their design personality and aesthetic. Unless clients are allowing web devs to design projects with their own tastes and choices, it's also one of the only contexts where web devs can completely control colors, fonts, and layouts to fit their preferences. This portfolio is a representation of me and the design vibes I've been loving, as well as an expo of projects I've completed. 🪩
+A crucial piece of a web developer's career materials is the portfolio. It not only exhibits work and projects they've completed, but also serves as a representation of their design personality and aesthetic. Unless clients are allowing web devs to design projects with their own tastes and choices, it's also one of the only contexts where web devs can completely control colors, fonts, and layouts to fit their preferences. This portfolio is a representation of me and the design vibes I've been loving, as well as an expo of projects I've completed. 🪩
 
 ### Technical Work
 
@@ -30,9 +30,14 @@ To access my portoflio, click on the  Link in the repository description, or fol
 Follow the git clone process to copy the code into your local repository. Run the terminal command "npm i" to install the necessary dependencies and then run "npm run dev" to kick off the local development server. 
 
 ## Usage 📸
+![Alt text](./public/PortfolioAbout.png)
+![Alt text](./public/PortfolioWork.png)
+![alt text](./public/PortfolioContact.png)
+![Alt text](./public/PortfolioResume.png)
+
 ## Credit 👤
 
-I worked on the project alone, but recieved help from my tutor, David Johnson, and my class TA, Justin Moore.
+I worked on this project alone, and received help from my TA & tutor, Justin Moore. 
 
 ## License 🪪
 
