@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Julius+Sans+One&display=swap'); 
 
+
+
 :root {
   --background: #F4F0EC;
   --text: #443C32;
@@ -66,12 +68,26 @@ body {
 
 .active {
   width: 100%;
+  
   background: rgba(102, 153, 204, 0.75);
   border-radius: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
+
+.active::before {
+  background: linear-gradient(to right, rgba(102, 153, 204, 0.75) 0%, rgba(102, 153, 204, 0) 100%);
+  width: 20%;
+  left: 0;
+}
+
+.active::after {
+  right: 0;
+}
+
+
 @media (min-width: 0px) and (max-width: 1250px) {
   .nav-link {
     font-size: 1.5rem;
@@ -121,7 +137,7 @@ footer {
   color: var(--blue);
   font-family: 'Julius Sans One';
   text-align: center;
-  
+  text-shadow: 2px 3px 2px rgba(176, 173, 165, 0.63);  
 }
 
 .aboutMe {
@@ -130,6 +146,7 @@ footer {
   margin: 1rem;
   line-height: 120%;
   margin-bottom: 2rem;
+  text-shadow: 4px 4px 2px rgba(219, 215, 205, 0.74);
   
 }
 /* END ABOUT */
@@ -138,6 +155,9 @@ footer {
 .carouselSize {
 width: 50rem;
 height: 30rem;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
 
 }
 
