@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Container, Row, Col } from 'react-bootstrap';
-import menuMatch from '../assets/workImages/menuMatchDesktop1.png';
+import menuMatch from '../assets/workImages/MenuMatchDesktop1.png';
 import littleSite from "../assets/workImages/LittleSiteOfHorrors.png";
 import weather from "../assets/workImages/WeatherDashboard.png";
 import password from "../assets/workImages/PasswordGenerator.png";

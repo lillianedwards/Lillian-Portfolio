@@ -227,3 +227,16 @@ font-family: "Crimson Text";
 
   margin-bottom: 5rem;
 }
+
+/* END RESUME */
+
+/* ERROR */
+
+.errorH1 {
+  font-family: 'Julius Sans One';
+  color: var(--text);
+}
+.errorTxt {
+  font-family: 'Julius Sans One';
+  color: var(--blue);
+}
