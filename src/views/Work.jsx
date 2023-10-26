@@ -25,21 +25,24 @@ function ControlledCarousel() {
    <Container className='d-flex justify-content-center'>
     <Carousel className='carouselSize' activeIndex={index} onSelect={handleSelect} touch={true} indicators={false}>
     <Carousel.Item>
-      <img src={menuMatch} alt="Menu Match Desktop" className='img-fluid' />
+      <a href="https://jkellogg01.github.io/menu-match/index.html#">
+      <img src={menuMatch} alt="Menu Match Desktop" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className='workH3'>Menu Match</h3>
         <p className='workP'>A front-end application that uses two-third party API's to supply users with food and cocktail recipes. Users can save recipes and save individual ingredients to an in-app sortable shopping list.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img src={littleSite} alt="Little Site Of Horrors Desktop" className='img-fluid' />
+      <a href="https://little-site-of-horrors-1-f45120ac21d1.herokuapp.com/">
+      <img src={littleSite} alt="Little Site Of Horrors Desktop" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className='workH3'>Little Site of Horrors</h3>
         <p className='workP'>A full-stack application that houses a scary movie database and customizable user profile to share favorite scary movies with fellow users.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img src={weather} alt="Weather Dashboard UI" className='img-fluid' />
+      <a href="https://lillianedwards.github.io/Weather-Dashboard/">
+      <img src={weather} alt="Weather Dashboard UI" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className='workH3'>Weather Dashboard</h3>
         <p className='workP'>
@@ -48,7 +51,8 @@ function ControlledCarousel() {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img src={password} alt="Password Generator UI" className='img-fluid' />
+      <a href="https://lillianedwards.github.io/Password-Generator/">
+      <img src={password} alt="Password Generator UI" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className='workH3'>Password Generator</h3>
         <p className='workP'>
@@ -57,7 +61,8 @@ function ControlledCarousel() {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img src={employee} alt="CLI Employee Tracker" className='img-fluid' />
+      <a href="https://github.com/lillianedwards/Employee-Tracker">
+      <img src={employee} alt="CLI Employee Tracker" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className='workH3'>Command Line Employee Tracker</h3>
         <p className='workP'>
@@ -66,7 +71,8 @@ function ControlledCarousel() {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img src={note} alt="Note-Take Application UI" className='img-fluid' />
+      <a href="https://note-taker-application48573-b5e692be3a90.herokuapp.com/">
+      <img src={note} alt="Note-Take Application UI" className='img-fluid' /></a>
       <Carousel.Caption>
         <h3 className="workH3">Note-Taker Application</h3>
         <p className='workP'>
