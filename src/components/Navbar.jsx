@@ -26,6 +26,7 @@ function Header() {
     // Set the active link based on the path
     setActiveLink(linkMapping[path] || "");
   }, [location]);
+  
   const fadeInVariants = {
     hidden: { opacity: 5, y: -50 },
     visible: {

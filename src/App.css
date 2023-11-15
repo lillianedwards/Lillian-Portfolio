@@ -19,10 +19,12 @@
   flex:1;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
-body {
+body, html {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -239,4 +241,9 @@ font-family: "Crimson Text";
 .errorTxt {
   font-family: 'Julius Sans One';
   color: var(--blue);
+}
+
+#resume {
+width: 40rem;
+
 }

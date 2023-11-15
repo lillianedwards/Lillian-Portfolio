@@ -1,8 +1,8 @@
 import React from 'react';
 
-import resume from '../assets/resume.png';
+import resume from '../assets/LillianEdwardsFrontEndImg.png';
 import {motion} from 'framer-motion';
-import pdf  from '../assets/Lillian_Edwards_-_UX_Designer.pdf'
+import pdf  from '/LillianEdwardsFrontEnd.pdf'
 
 
 function Resume() {
@@ -21,7 +21,7 @@ function Resume() {
   href={pdf} 
   target='_blank' 
   // download={pdf}
-  ><img src={resume} alt="Lillian Edwards Resume" /></a>
+  ><img id='resume' src={resume} alt="Lillian Edwards Resume" /></a>
 </motion.div>
   </div>
 
