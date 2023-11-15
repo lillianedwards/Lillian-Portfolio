@@ -100,11 +100,6 @@ const validateEntry = (e) => {
             onMouseOut={validateEntry}
           />
         </Form.Group>
-        {notValid && (
-            <Toast className='contactInput container' variant="info">
-            Please fill out all my corn fields. 🌽
-          </Toast>
-        )}
         <Button className='contactBtn' type="submit" >
           Send
         </Button>
