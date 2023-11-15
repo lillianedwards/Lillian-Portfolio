@@ -40,46 +40,10 @@ function ControlledCarousel() {
         <p className='workP'>A full-stack application that houses a scary movie database and customizable user profile to share favorite scary movies with fellow users.</p>
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item>
-      <a href="https://lillianedwards.github.io/Weather-Dashboard/">
-      <img src={weather} alt="Weather Dashboard UI" className='img-fluid' /></a>
-      <Carousel.Caption>
-        <h3 className='workH3'>Weather Dashboard</h3>
-        <p className='workP'>
-        The weather dashboard allows users to search by city to see the current weather and 5-day forecast, as well as access and manage previous cities they've searched.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <a href="https://lillianedwards.github.io/Password-Generator/">
-      <img src={password} alt="Password Generator UI" className='img-fluid' /></a>
-      <Carousel.Caption>
-        <h3 className='workH3'>Password Generator</h3>
-        <p className='workP'>
-        A front-end tool that uses a variety of JavaScript functions to check an inputted password.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <a href="https://github.com/lillianedwards/Employee-Tracker">
-      <img src={employee} alt="CLI Employee Tracker" className='img-fluid' /></a>
-      <Carousel.Caption>
-        <h3 className='workH3'>Command Line Employee Tracker</h3>
-        <p className='workP'>
-        A command-line tool for business owners to quickly track and update employees, departments, salaries, and managers.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <a href="https://note-taker-application48573-b5e692be3a90.herokuapp.com/">
-      <img src={note} alt="Note-Take Application UI" className='img-fluid' /></a>
-      <Carousel.Caption>
-        <h3 className="workH3">Note-Taker Application</h3>
-        <p className='workP'>
-        A front-end tool that allows users to schedule out their 9-5 workday, and adjusts styling to the time of day to increase efficiency.
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
+    
+   
+   
+    
   </Carousel>
   </Container>
     
