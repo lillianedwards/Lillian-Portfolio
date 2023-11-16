@@ -25,7 +25,7 @@ function App() {
     <Route path = '/about' element = {<About/>}/>
     <Route path = '/contact' element = {<Contact/>}/>
     <Route path = '/resume' element = {<Resume/>}/>
-    <Route path = '/work' element = {<ControlledCarousel/>}/>
+    <Route path = '/work' element = {<NewWork/>}/>
     <Route path = '*' element = {<Error/>}/>
 
     </Routes>
