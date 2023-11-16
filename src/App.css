@@ -197,18 +197,67 @@ font-family: "Crimson Text";
   font-family: 'Crimson Text';
   color: var(--text);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 }
 
 .links {
   text-decoration: none;
   color: var(--white);
-  font-size: large;
+  font-size: 1.2rem;
+  background: rgba(68, 60, 50, 0.75);
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 8px;
+  font-family: 'Crimson Text';
+  
+  
+}
+
+.links:hover {
+background-color: var(--text);
 }
 
 .projTitle {
   text-shadow: 2px 2px 2px rgba(219, 215, 205, 0.74);
   text-align: center;
+}
+
+.projDate {
+  color: var(--white);
+  font-size: medium;
+  text-align: center;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--khaki); /* Change the color on hover */
+}
+
+/* Handle on active state */
+::-webkit-scrollbar-thumb:active {
+  background: var(--khaki) /* Change the color on active state */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(102, 153, 204, 0.25); /* Set the background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--white); /* Set the color of the handle */
+  border-radius: 6px; /* Optional: Round the corners of the handle */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: var(--background); /* Set the background color of the corner */
 }
 /* END WORK */
 

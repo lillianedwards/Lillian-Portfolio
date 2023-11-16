@@ -15,7 +15,7 @@ function About() {
           </Col>
           <Col xs={12}  md={9} >
           <h4 className='aboutMe'>
-          Greetings! I'm Lillian, a new Duluth-based front-end developer. I love the UI/UX side of things, but I have a knack for making things work. I can't give up JavaScript, there's still so much to learn!
+          Greetings! I'm Lillian, a new Duluth-based front-end developer. I love React and making beautiful and user-friendly designs come to life through React. I am currently exploring Vue.js and Material UI. 
           </h4>
           <h4 className='aboutMe'>
           I bring collaboration skills, a user-centric perspective, and information architecture proficiency from my previous career as a classroom teacher. I can also make up a song about almost anything, thank you Kindergarten!

@@ -175,7 +175,7 @@ const imageContainerStyle = {
 //   overflow: 'auto',
 // };
 
-function ProjectCard({ title, imageSrc, description, siteLink, repoLink }) {
+function ProjectCard({ title, date, imageSrc, description, siteLink, repoLink }) {
   return (
     <div className="col-lg-4 col-md-4 col-12 mb-4">
       <Card style={cardStyle} className="projCard">
@@ -184,6 +184,9 @@ function ProjectCard({ title, imageSrc, description, siteLink, repoLink }) {
         </div>
         <Card.Body>
           <Card.Title className="projTitle">{title}</Card.Title>
+          <Card.Title className="projDate">
+            {date}
+          </Card.Title>
           <div>
             <Card.Text>{description}</Card.Text>
           </div>
@@ -196,7 +199,7 @@ function ProjectCard({ title, imageSrc, description, siteLink, repoLink }) {
             Deployed Site
           </Card.Link>
           <Card.Link className="links" href={repoLink} target="_blank">
-            GitHub Repo
+            Repository
           </Card.Link>
         </Card.Body>
       </Card>
@@ -209,21 +212,24 @@ function NewWork() {
     <div className="newWorkContain">
       <div className="row">
         <ProjectCard
-          title="Menu Match: September 2023"
+          title="Menu Match"
+          date="September 2023"
           imageSrc={MenuMatch}
           description="Menu Match is a front-end web app that uses bootstrap and jquery to integrate third-party APIs and create a cohesive experience organizing food & drink recipes for hosts and entertainers."
           siteLink="https://jkellogg01.github.io/menu-match/index.html#"
           repoLink="https://github.com/jkellogg01/menu-match"
         />
         <ProjectCard
-          title="Little Site of Horrors: October 2023"
+          title="Little Site of Horrors"
+          date="October 2023"
           imageSrc={Horrors}
           description="Little Site of Horrors is a full-stack application using Node.js and Express, MySQL, JavaScript, and Handlebars.js. This is a demonstration of building an API."
           siteLink="https://little-site-of-horrors-1-f45120ac21d1.herokuapp.com/"
           repoLink="https://github.com/ljkahn/littleSiteOfHorrors"
         />
         <ProjectCard
-          title="Blurb: November 2023"
+          title="Blurb"
+          date="November 2023"
           imageSrc={Blurb}
           description="(MERNG-Stack) Blurb is a social media application utilizing React, MongoDB, GraphQL, Node and Express. This is a demonstration of CRUD capabilities with this tech stack"
           siteLink="https://blurb4-web-6d7dbae39646.herokuapp.com/"
